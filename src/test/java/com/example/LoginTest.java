@@ -17,10 +17,10 @@ public class LoginTest {
 
     @BeforeEach
     void setUp() {
-
-        options.addArguments("--remote-allow-origins=*");
         // Setup Chrome options for headless mode
         ChromeOptions options = new ChromeOptions();
+        
+        options.addArguments("--remote-allow-origins=*");
         options.addArguments("--headless");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
